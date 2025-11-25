@@ -1,0 +1,80 @@
+/* Page background */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.page-bg {
+  background-color: #d3d3d3;
+  min-height: 100vh;
+  padding: 30px 0;
+}
+
+/* Main card */
+.story-card {
+  background-color: #ffffff;
+  width: 70%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 55px 60px;
+  border-radius: 25px;
+  box-sizing: border-box;
+}
+
+/* Headings */
+.story-header h1 {
+  font-size: 80px;
+  line-height: 0.9;
+  text-align: center;
+  margin: 0 0 10px;
+  color: #34a303;
+  font-weight: 900;
+}
+
+.story-header h2 {
+  font-size: 40px;
+  text-align: center;
+  margin: 0 0 35px;
+  color: #34a303;
+  font-weight: 900;
+}
+
+.green-heading {
+  font-size: 40px;
+  text-align: center;
+  margin: 45px 0 20px;
+  color: #34a303;
+  font-weight: 900;
+}
+
+/* Sections and text */
+.story-section {
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 5px;
+}
+
+.story-section p {
+  margin-bottom: 15px;
+}
+
+/* Did you know box */
+.did-you-know {
+  margin: 40px 0;
+  background-color: #34a303;
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 25px 30px 30px;
+}
+
+.did-you-know h2 {
+  margin: 0 0 10px;
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.did-you-know p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.4;
+}

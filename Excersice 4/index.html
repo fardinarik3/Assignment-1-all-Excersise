@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Wondering Photographer – Travel Prints</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root {
+      --page-bg: #ffc0e1;
+      --card-bg: #ffffff;
+      --accent: #00bcd4;
+      --text-main: #222222;
+      --text-muted: #444444;
+      --focus-ring: #000000;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background-color: var(--page-bg);
+      color: var(--text-main);
+      line-height: 1.6;
+    }
+
+    a {
+      color: #0044cc;
+    }
+
+    a:focus-visible,
+    button:focus-visible {
+      outline: 3px solid var(--focus-ring);
+      outline-offset: 3px;
+    }
+
+    header {
+      text-align: center;
+      padding: 1.5rem 1rem 0.5rem;
+      position: relative;
+    }
+
+    .divider {
+      max-width: 260px;
+      height: auto;
+      display: block;
+      margin: 0 auto 0.75rem;
+    }
+
+    .cart-link {
+      position: absolute;
+      right: 1.5rem;
+      top: 1.2rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.25rem;
+      border-radius: 4px;
+    }
+
+    .cart-link img {
+      width: 32px;
+      height: 32px;
+      display: block;
+    }
+
+    main {
+      max-width: 520px;
+      margin: 0 auto;
+      padding: 0 1rem 2rem;
+    }
+
+    .photo-card {
+      background-color: var(--card-bg);
+      margin-bottom: 1.75rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
+    }
+
+    .photo-card figure {
+      margin: 0;
+    }
+
+    .photo-card img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .photo-caption {
+      padding: 0.75rem 0.5rem;
+      background-color: var(--accent);
+      color: #ffffff;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .photo-actions {
+      padding: 0.25rem 0.5rem 0.75rem;
+    }
+
+    .photo-actions button {
+      padding: 0.4rem 0.8rem;
+      border-radius: 4px;
+      border: 2px solid var(--accent);
+      background-color: #ffffff;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      cursor: pointer;
+    }
+
+    .photo-actions button:hover {
+      background-color: var(--accent);
+      color: #ffffff;
+    }
+
+    footer {
+      max-width: 520px;
+      margin: 0 auto 2rem;
+      padding: 0 1rem;
+      font-size: 0.95rem;
+    }
+
+    footer nav ul {
+      padding-left: 1.1rem;
+      margin: 0.5rem 0 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="TheDivider.png" class="divider" alt="" role="presentation">
+    <a href="checkout.html" class="cart-link" aria-label="View basket and go to checkout">
+      <img src="shopping.svg" alt="">
+    </a>
+    <h1>The Wondering Photographer</h1>
+    <p>Travel photographs you can buy as high-quality prints.</p>
+  </header>
+
+  <main>
+    <section aria-label="Travel photo prints for sale">
+
+      <!-- Ocean photo -->
+      <article class="photo-card">
+        <figure>
+          <img src="OceanPhoto.jpg"
+               alt="Two people sit on a white rocky cliff above a calm blue ocean at sunset.">
+          <figcaption class="photo-caption">
+            This was from a fabulous trip to the coast of Greenland with my family.
+            The water was lovely – but very cold!
+          </figcaption>
+        </figure>
+        <div class="photo-actions">
+          <button type="button" aria-label="Add Greenland ocean cliff print to basket">
+            Add to basket
+          </button>
+        </div>
+      </article>
+
+      <!-- Golden Gate Bridge photo -->
+      <article class="photo-card">
+        <figure>
+          <img src="BridgePhoto.jpg"
+               alt="Looking up at the orange tower of the Golden Gate Bridge against a clear blue sky.">
+          <figcaption class="photo-caption">
+            A picture of the Golden Gate Bridge. New York! New York!
+          </figcaption>
+        </figure>
+        <div class="photo-actions">
+          <button type="button" aria-label="Add Golden Gate Bridge print to basket">
+            Add to basket
+          </button>
+        </div>
+      </article>
+
+      <!-- Valley photo -->
+      <article class="photo-card">
+        <figure>
+          <img src="ValleyPhoto.jpg"
+               alt="A deep river valley between rocky mountains in Greenland, seen from a high viewpoint.">
+          <figcaption class="photo-caption">
+            Another great photo from Greenland. It's a river valley where a glacier used to be.
+          </figcaption>
+        </figure>
+        <div class="photo-actions">
+          <button type="button" aria-label="Add Greenland river valley print to basket">
+            Add to basket
+          </button>
+        </div>
+      </article>
+
+      <!-- Waterfall photo -->
+      <article class="photo-card">
+        <figure>
+          <img src="WaterfallPhoto.jpg"
+               alt="A tall waterfall crashes into a bright blue pool surrounded by green mossy rocks.">
+          <figcaption class="photo-caption">
+            The waterfall made such a lovely sound. I could have fallen asleep!
+          </figcaption>
+        </figure>
+        <div class="photo-actions">
+          <button type="button" aria-label="Add waterfall print to basket">
+            Add to basket
+          </button>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2018 The Wondering Photographer.</p>
+    <nav aria-label="Site navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About me</a></li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+</html>
